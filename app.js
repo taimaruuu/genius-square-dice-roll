@@ -85,10 +85,8 @@ var checkerboard = function (rows) {
   var roll4 = get_random(dice4);
   var roll5 = get_random(dice5);
   var roll6 = get_random(dice6);
-  var full_roll = [roll1, roll2, roll3, roll4, roll5, roll6];
-  console.log(full_roll);
+  var roll7 = get_random(dice7);
 
-  var n = 0;
   var letters = ["A", "B", "C", "D", "E", "F"];
   var colors1 = ["dark", "light", "dark", "light", "dark", "light"];
   var colors2 = ["light", "dark", "light", "dark", "light", "dark"];
@@ -117,7 +115,8 @@ var checkerboard = function (rows) {
         are_equal(temp_coor, roll3) ||
         are_equal(temp_coor, roll4) ||
         are_equal(temp_coor, roll5) ||
-        are_equal(temp_coor, roll6)
+        are_equal(temp_coor, roll6) ||
+        are_equal(temp_coor, roll7)
       ) {
         cb += "<div class='dot'></div>";
       }
