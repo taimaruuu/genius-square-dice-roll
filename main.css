@@ -1,6 +1,6 @@
 #checker-board {
-  width: 350px;
-  height: 350px;
+  width: 50vw;
+  height: 50vw;
   /* background-color: black; */
   /* border: 1px solid rgba(0, 0, 0, 0.65); */
   /* border-radius: 10px; */
@@ -8,9 +8,26 @@
   margin: 0 auto;
 }
 
+.dot {
+  height: 90%;
+  width: 90%;
+  background-color: #a47449;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  margin: 5%;
+}
+
+p {
+  font-size: 90%;
+  margin: 0;
+  line-height: 100%;
+}
+
 .square {
-  width: 50px;
-  height: 50px;
+  font-size: 5vw;
+  width: 14.28%;
+  height: 14.28%;
   float: left;
   text-align: center;
   vertical-align: middle;
@@ -33,12 +50,12 @@
 .no-outline {
   outline: 0px;
 }
-.checker {
+/* .checker {
   width: 40px;
   height: 40px;
   border-radius: 20px;
   position: absolute;
-}
+} */
 .red {
   background-color: red;
 }
